@@ -60,6 +60,10 @@ susp_rates <- rbind(susp_rates_state, susp_rates_dist)
 #Remove Count column
 susp_rates$Count <- NULL
 
+#Relabel Hispanic/Latino to Hispanic or Latino
+
+susp_rates$`Race/Ethnicity`[susp_rates$`Race/Ethnicity` == "Hispanic/Latino of any race"] <- "Hispanic or Latino of any race"
+
 #backfill Districts
 district_dp_URL <- 'https://raw.githubusercontent.com/CT-Data-Collaborative/ct-school-district-list/master/datapackage.json'
 district_dp <- datapkg_read(path = district_dp_URL)
@@ -81,7 +85,7 @@ years <- c("2009-2010",
            "2015-2016")
 
 RE <- c("White", 
-        "Hispanic/Latino of any race",
+        "Hispanic or Latino of any race",
         "Two or More Races",
         "Black or African American",
         "American Indian or Alaska Native",

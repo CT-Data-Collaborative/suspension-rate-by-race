@@ -180,7 +180,22 @@
         "number type": "float",
         "value": 3.9
       } 
-    }
+    }, 
+    {
+      "type": "$lookup",
+      "filter": {
+        "District": "Hartford School District",
+        "Year": "2013-2014",
+        "Variable": "Suspensions",
+        "Race/Ethnicity": "Hispanic or Latino of any race",
+        "Measure Type": "Percent" 
+      },
+      "expected": {
+        "type": "$match",
+        "number type": "float",
+        "value": 17.9
+      } 
+    }    
   ],
   "dimension_groups": [
     {
