@@ -1,7 +1,5 @@
 Suspension-Rate-by-Race
 
-[![Build Status](https://travis-ci.org/CT-Data-Collaborative/suspension-rate-by-race.svg?branch=master)](https://travis-ci.org/CT-Data-Collaborative/suspension-rate-by-race)
-
 Suspension Rate by Race reports the percentage of students who have recieved at least one sanction (ISS, OSS, EXP) during a school year, by race/ethnicity.
 
 Data Source: <http://edsight.ct.gov/SASPortal/main.do>
