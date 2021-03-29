@@ -4,3 +4,6 @@ venv/
 env/
 .DS_Store
 .idea/
+.Rhistory
+*.Rproj
+.Rproj.user

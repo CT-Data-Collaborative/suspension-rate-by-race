@@ -83,7 +83,10 @@ years <- c("2009-2010",
            "2013-2014",
            "2014-2015",
            "2015-2016", 
-           "2016-2017")
+           "2016-2017",
+           "2017-2018",
+           "2018-2019",
+           "2019-2020")
 
 RE <- c("White", 
         "Hispanic or Latino of any race",
@@ -159,7 +162,7 @@ test2<-test[duplicated(test), ]
 #Write CSV
 write.table(
   complete_susp_rates_long,
-  file.path(path_to_top_level, "data", "suspension_rate_race_2017.csv"),
+  file.path(path_to_top_level, "data", "suspension_rate_race_2020.csv"),
   sep = ",",
   row.names = F
 )
